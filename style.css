@@ -1,0 +1,470 @@
+    /*---------*/
+    /* Fuente */
+    /*---------*/
+
+    *{
+        font-family: 'Indie Flower', cursive;
+    }
+
+
+    /*--------------------*/
+    /* Ajustes generales  */
+    /*--------------------*/
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    h2 {
+        margin: 0;
+        margin-left: 10px;
+    }
+    
+    p {
+        margin-left: 10px;    
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        background-size: 100%;
+        font-family: 'Indie Flower', cursive;
+        
+    }
+    
+    :root{
+        --color_cabecera: rgba(0, 162, 255, 0);
+    }
+
+
+
+    /*-----------------------------------------*/
+    /* Cabecera prinicpal titulo Siete y Medio */
+    /*-----------------------------------------*/
+
+    .cabecera {
+        color: white;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to top, #00b7d6, #84bfca);
+    }
+
+
+    
+    /*-------------------------------*/
+    /* Barra navegacion logp / links */
+    /*-------------------------------*/
+
+    .barraNavegacion {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #d9f1e9;
+        border-bottom-left-radius: 5px;      
+        border-bottom-right-radius: 5px; 
+        
+    
+        /* Dejar la barra de navegación fija */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .logo {
+        margin-left: 40px;
+    }
+    
+    #menuItems {
+        margin-right: 50px;
+        
+    }
+    
+    
+    .menuLinks {
+        text-align: right;
+        justify-content: right;
+        display: flex;
+    }
+    
+    .menuLinks ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    .menuLinks ul li {    
+        display: inline-block;
+        margin-right: 15px;
+        
+    }
+    
+    .menuLinks ul li a{
+        text-decoration:none;
+        color: black;
+        border-radius: 40px;
+        margin: 0 5px;
+        padding: 6px 13px;
+        
+    }
+
+    .menuLinks ul li a.subrayado, a:hover{
+        transition:.4s;
+        background-color: rgba(0,0,0,.3);
+    }
+
+
+
+    /*---------*/
+    /* COMUNES */
+    /*---------*/
+
+    .tituloPagina {
+        display: flex;
+        justify-content: center;
+        font-family: 'Indie Flower', cursive;   
+        font-size: 30px;
+    }
+
+
+
+    .principalTutorial, .principalIndex{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cuadro1, .cuadro2, .cuadro3, .cuadro4{
+        width: 60%;
+        padding: 20px;
+        margin: 30px;
+        /* border: 1px solid #000; */
+        /* border-radius: 15px; */
+        background-color: rgba(0, 0, 0, 0.15);
+        align-items: center;
+        justify-content: center;
+        text-align:justify;
+        border-radius: 35px 0px 35px 35px;
+        -moz-border-radius: 35px 0px 35px 35px;
+        -webkit-border-radius: 35px 0px 35px 0px;
+        border: 2px solid #5878ca;
+    }
+
+
+    /*-----------------------------*/
+    /* INDEX ---  REGLAS DEL JUEGO */
+    /*-----------------------------*/
+
+    .other-color{
+        color: rgb(0, 139, 252);
+    }
+    
+
+
+
+    /*--------------------------*/
+    /* TUTORIAL ---  COMO JUGAR */
+    /*--------------------------*/
+
+    
+
+  
+
+    .titulo{
+        justify-content: center;
+        display: flex;
+        text-decoration: underline;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .tutorial{
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        
+    }
+
+    .tituloApartado{
+        display: flex;
+        font-size: 21px;
+    }
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*--------*/
+        /* Footer */
+        /*--------*/
+    
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-family: 'Indie Flower', cursive;   
+            font-size: 15px;
+            padding: 60px 0 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .footer2 {
+            background: #000;
+            color: #8a8a8a;
+            font-family: 'Indie Flower', cursive;
+            padding: 10px 0 20px;
+        }
+        
+        .logoFooter, .appFooter, .infoFooter, .redesFooter {
+        margin:25px}
+        
+        .app-logo {
+            margin-top: 20px;
+        }
+        
+        .app-logo img {
+            width: 140px;
+        }
+        
+        .footer hr {
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+        
+        .copyright {
+            text-align: center;
+        }
+        
+        .logoImgF{
+            width: 150px;
+        }
+        
+        .logoFooter {
+            align-items: center;
+        }
+            /*------------*/
+            /* Fin Footer */
+            /*------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*---------------------------------*/
+        /* Ajustes para la vista en móvil. */
+        /*---------------------------------*/
+    
+        @media only screen and (max-width: 768px) {
+    
+            /* Ajustes de la barra de navegación. */
+
+            .cabecera{
+                display: flex;
+            }
+            .logo {
+                margin-left: 25px;
+            }
+                    
+            #MenuItems {
+                margin-right: 75px;
+            }    
+            .tituloPagina{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                align-items: center;
+                font-size: 30px;
+            }
+            
+
+        
+
+
+
+
+
+
+
+
+
+            /* Ajustes de los cuadros. */
+        .imgs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .imgPers {
+            display: flex;
+            align-items: center;     
+            transition: transform .3s;
+            background-color: white;
+            overflow: hidden;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: darkgray;
+        }
+
+        .producto {
+            margin-right: 0;
+            display: flex;
+            width: 250px;
+            flex-direction: column;
+            font-family: 'Indie Flower', cursive;
+            border-radius: 10px;
+            margin: 10px;
+            align-items: center;
+        }
+
+            /* Ajustes de personajes */
+            .descPers {
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+            .doscol {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+    
+            .circulo {
+                width: 300px;
+                height: 300px;
+            }
+                /* Ajuste imágenes principales para que aparezcan en columna */
+            .imgsPersonajes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin:0
+            }
+      
+            .pr {
+                margin: 30px;
+            }
+    
+                /* Ajuste textos para que no se vea al 50%. */
+            .textoIzq {
+                width: 80%;
+                display: flex;
+            }
+    
+            .textoDer {
+                width: 80%;
+                display: flex;
+    
+            }
+
+            .momentos {
+                display: flex;
+                flex-direction: column;
+                margin: 40px;
+            }
+        
+            .columnas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        
+            .img1 {
+                width: 200px;
+                height: 200px;
+            }
+        
+                
+            .textoI {
+                width: 80%;
+                display: flex;
+            }
+        
+            .textoD {
+                width: 80%;
+                display: flex;
+        
+            }
+
+            .imgsIndex {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .principalIndex {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                align-items: center;
+            }
+            .principalTutorial{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                align-items: center;
+            }
+
+            /* Ajustes del footer */
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 15px;
+            padding: 60px 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }    
