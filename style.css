@@ -347,7 +347,12 @@
                 justify-content: right;
                 text-align: right;
             }    
-                /* MIRAR TODO ESTO EN TUTORIAL.HTML */
+
+            .menuLinks li{
+                display: flex;
+                padding-bottom: 5px;
+            }
+                
             .menuLinks {
                 display: flex;
                 align-items: right;
