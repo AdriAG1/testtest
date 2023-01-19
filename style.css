@@ -3,8 +3,16 @@
     /*---------*/
 
     *{
-        font-family: 'arial';
+        font-family: 'Arial';
     }
+
+    @font-face {
+        font-family: 'Bevan';
+        src: url("./fonts/BevanRegular.ttf") format("opentype");
+        
+    }
+
+   
 
 
     /*--------------------*/
@@ -19,11 +27,7 @@
         list-style: none;
     }
     
-/*     
-    p {
-        margin-left: 5px;    
-        font-size: 15px;
-    } */
+
     
     body {
         padding: 0;
@@ -56,10 +60,11 @@
         display: flex;
         margin-left: 30px;
         justify-content: center;
-
+        
         
     }
 
+    
     
     /*-------------------------------*/
     /* Barra navegacion logp / links */
@@ -71,11 +76,8 @@
         justify-content: space-between;
         padding: 5px;
         background-color: #d9f1e9;
-        /* border-bottom-left-radius: 5px;      
-        border-bottom-right-radius: 5px;  */
         
-    
-        /* Dejar la barra de navegación fija */
+        /* Nav bar fija */
         position: -webkit-sticky;
         position: sticky;
         top: 0;
@@ -146,7 +148,7 @@
 
 
 
-    .principalTutorial, .principalIndex, .principalEquipo{
+    .principalTutorial, .principalIndex{
         display: flex;
         flex-direction: column;
         margin: 20px;
@@ -158,8 +160,6 @@
         width: 60%;
         padding: 20px;
         margin: 30px;
-        /* border: 1px solid #000; */
-        /* border-radius: 15px; */
         background-color: rgba(0, 0, 0, 0.15);
         align-items: center;
         justify-content: center;
@@ -179,6 +179,25 @@
         color: rgb(0, 139, 252);
     }
     
+    /* .divregla{
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        text-align: right;
+        
+    } */
+    .principalIndex .cuadro #regla{
+        
+        height: 100px;
+        width: 150px;
+        align-items: right;
+        text-align: right;
+        justify-content: right;
+        top: 0;
+        right: 0;
+        
+
+    }
 
 
 
@@ -206,10 +225,10 @@
         
     }
 
-    .tituloApartado{
+    /* .tituloApartado{
         display: flex;
         font-size: 21px;
-    }
+    } */
 
 
 
@@ -221,10 +240,22 @@
     /* EQUIP ---   */
     /*-------------*/
 
+    #engranajes{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        text-align: left;
+        align-items: left;
+        margin-left: 26px;
+    }
 
-
-
-    
+    .principalEquipo{
+        display: flex;
+        flex-direction: column;
+        margin-top: -120px;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 
@@ -321,6 +352,31 @@
         /* Ajustes para la vista en móvil. */
         /*---------------------------------*/
     
+
+        @media only screen and (max-width: 900px) {
+
+
+            #engranajes{
+                display: flex;
+                width: 110px;
+                height: 110px;
+                text-align: center;
+                align-items: center;
+                margin: 0px auto;
+
+            }
+
+            .principalEquipo{
+                margin:0px;
+            }
+
+
+
+
+
+        }
+
+
         @media only screen and (max-width: 768px) {
     
             /* Ajustes de la barra de navegación. */
@@ -543,6 +599,13 @@
             display: flex;
             margin: 0px auto;
             justify-content: center;
+        }
+
+        .footer .appFooter p{
+            display: flex;
+            margin: 0px auto;
+            justify-content: center;
+            padding-top: 5px;
         }
         
         .footer .infoFooter h3{
