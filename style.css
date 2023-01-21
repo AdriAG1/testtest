@@ -1,6 +1,6 @@
-    /*---------*/
+    /*--------*/
     /* Fuente */
-    /*---------*/
+    /*--------*/
 
     *{
         font-family: 'Arial';
@@ -17,8 +17,6 @@
     }
 
    
-
-
     /*--------------------*/
     /* Ajustes generales  */
     /*--------------------*/
@@ -30,8 +28,6 @@
     ul {
         list-style: none;
     }
-    
-
     
     body {
         padding: 0;
@@ -64,14 +60,12 @@
         display: flex;
         margin-left: 30px;
         justify-content: center;
-        
-        
     }
 
     
     
     /*-------------------------------*/
-    /* Barra navegacion logp / links */
+    /* Barra navegacion logo / links */
     /*-------------------------------*/
 
     .barraNavegacion {
@@ -105,7 +99,6 @@
         font-weight: bold;
         
     }
-    
     
     .menuLinks {
         text-align: right;
@@ -151,15 +144,6 @@
     }
 
 
-
-    .principalTutorial, .principalIndex{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-
     .cuadro{
         width: 60%;
         padding: 20px;
@@ -174,38 +158,69 @@
         border: 2px solid #5878ca;
     }
 
+    .bold{
+        font-weight: bold;
+    }
 
     /*-----------------------------*/
     /* INDEX ---  REGLAS DEL JUEGO */
     /*-----------------------------*/
 
-    .other-color{
-        color: rgb(0, 139, 252);
+    .principalIndex{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
     }
     
-    
-    .principalIndex .cuadro #regla{
-        
+    .principalIndex .cuadro .ulIndex {
+        margin-top: -55px;
+    }
+
+    /* IMG RELGA DERECHA*/ 
+    .principalIndex .cuadro .divregla{
+        justify-content: right;
+        margin: 0px auto;
+        text-align: right;
+    }
+    .principalIndex .cuadro .divregla img{
         height: 100px;
         width: 150px;
-        align-items: right;
-        text-align: right;
-        justify-content: right;
-        top: 0;
-        right: 0;
         
-
+        
+    }
+    .principalIndex .cuadro .divregla img:hover{
+        
+        -webkit-transform: rotate(-100deg);
     }
 
 
+    /* IMAGEN COPA */ 
 
-    /*--------------------------*/
-    /* TUTORIAL ---  COMO JUGAR */
-    /*--------------------------*/
+    .principalIndex .cuadro .divcopa{
+        justify-content: left;
+        text-align: left;
+    }
+    .principalIndex .cuadro .divcopa img{
+        height: 160px;
+        width: 110px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
 
-    
 
-  
+    /*------------*/
+    /* TUTORIAL   */
+    /*------------*/
+
+    .principalTutorial{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: -15px; */
+        align-items: center;
+        justify-content: center;
+    }
 
     .titulo{
         justify-content: center;
@@ -214,6 +229,7 @@
         margin: 10px;
         text-align: center;
         font-size: 20px;
+        font-weight: bold;
     }
 
     .tutorial{
@@ -223,111 +239,293 @@
         
     }
 
-    /* .tituloApartado{
+    .fotosBaraja{
         display: flex;
-        font-size: 21px;
-    } */
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    #barajaesp {
+        width: 240px;
+        height: 190px;
+        margin-left: 35px;
+    }
 
-
+    #barajapoker{
+        width: 200px;
+        height: 190px;
+        margin-right: 35px;
+    }
 
     
 
-
-    /*-------------*/
-    /* EQUIP ---   */
-    /*-------------*/
-
-    #engranajes{
-        width: 150px;
-        height: 150px;
-        display: flex;
-        text-align: left;
-        align-items: left;
-        margin-left: 26px;
-    }
+    /*-------*/
+    /* EQUIP */
+    /*-------*/
 
     .principalEquipo{
         display: flex;
         flex-direction: column;
-        margin-top: -120px;
+        margin-top: -30px;
         align-items: center;
         justify-content: center;
+    }
+
+    .fotosEquipo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #engranajes{
+        width: 150px;
+        height: 150px;
+        text-align: left;
+        align-items: left;
+        margin-left: 35px;    
+    }
+
+    #equipo{
+        width: 150px;
+        height: 150px;
+        margin-right: 35px;
     }
 
 
 
 
+    /*--------*/
+    /* Footer */
+    /*--------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-        /*--------*/
-        /* Footer */
-        /*--------*/
+    .footer {
+        background: #000;
+        color: #8a8a8a;
+        font-size: 15px;
+        padding: 50px 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     
-        .footer {
-            background: #000;
-            color: #8a8a8a;
-            font-size: 15px;
-            padding: 50px 0 20px;
+    .footer2 {
+        background: #000;
+        color: #8a8a8a;
+        padding: 10px 0 20px;
+    }
+    
+    .logoFooter, .appFooter, .infoFooter, .redesFooter {
+    margin:25px}
+    
+    .app-logo {
+        margin-top: 20px;
+    }
+    
+    .app-logo img {
+        width: 140px;
+    }
+    
+    .footer hr {
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    
+    .logoImgF{
+        width: 120px;
+    }
+    
+    .logoFooter img{
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+
+
+
+    /*----------------*/
+    /* VISTA EN MOVIL */
+    /*----------------*/
+    
+
+    
+
+
+    @media only screen and (max-width: 768px) {
+
+        /* Ajustes de la barra de navegación. */
+
+        .sieteymedio{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .barraNavegacion .logo {
+            margin-left: 10px;
+        }
+        .barraNavegacion .logo img{
+            width:60px;
+            height:60px;
+        };
+                
+        #MenuItems {
+            margin-right: 25px;
+            display: flex;
+            margin-left:20px;
+            align-items: right;
+            justify-content: right;
+            text-align: right;
+        }    
+
+        .menuLinks li{
+            display: flex;
+            padding-bottom: 5px;
+        }
+            
+        .menuLinks {
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            text-align: right;
+        }
+        .tituloPagina{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            font-size: 22px;
+        }
+        
+        .barraNavegacion{
+            display:flex;
+        }
+
+
+        /*********/
+        /* INDEX */
+        /*********/
+
+        .principalIndex {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        
+        /* REGLA */
+
+        .principalIndex .cuadro .divregla{
+            justify-content: center;
+            margin: 0px auto;
+            text-align: center;
+        }
+        .principalIndex .cuadro .divregla img{
+            height: 50px;
+            width: 90px;
+        }
+
+        /* COPA */
+
+        .principalIndex .cuadro .divcopa{
+            justify-content: center;
+            margin: 0px auto;
+            text-align: center;     
+        }
+        .principalIndex .cuadro .divcopa img{
+            height: 50px;
+            width: 50px;
+        }
+
+
+        .principalIndex .cuadro .ulIndex {
+            margin-top: 10px;
+        }
+
+
+        /************/
+        /* TUTORIAL */
+        /************/
+
+        .principalTutorial{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+        }
+
+        .principalTutorial p.titulo{
+            display: flex;
+            font-size: 14px;
+        }
+
+        .principalTutorial p, li, ul, .principalEquipo p{
+            font-size: 11px;
+        }
+
+        
+        .fotosBaraja{
             display: flex;
             flex-direction: row;
             justify-content: center;
+            align-items: center;
         }
-        
-        .footer2 {
-            background: #000;
-            color: #8a8a8a;
-            padding: 10px 0 20px;
+
+        #barajaesp {
+            width: 150px;
+            height: 140px;
+            margin-right: 35px;
+            margin-bottom: 10px;
         }
-        
-        .logoFooter, .appFooter, .infoFooter, .redesFooter {
-        margin:25px}
-        
-        .app-logo {
-            margin-top: 20px;
+
+        #barajapoker{
+            width: 110px;
+            height: 130px;
+            margin-left: 35px;
+            margin-bottom: 10px;
         }
+
         
-        .app-logo img {
-            width: 140px;
-        }
-        
-        .footer hr {
-            background: #b5b5b5;
-            height: 1px;
-            margin: 20px 0;
+        /**********/
+        /* EQUIPO */
+        /**********/
+
+        .fotosEquipo{
+            display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
         }
-        
-        .copyright {
-            text-align: center;
+
+        #engranajes{
+            width: 130px;
+            height: 120px;
+            margin-right: 25px;
+            margin-bottom: 10px;
         }
-        
-        .logoImgF{
+
+        #equipo{
             width: 120px;
+            height: 120px;
+            margin-left: 25px;
+            margin-bottom: 10px;
         }
         
-        .logoFooter img{
-            display: flex;
-            align-items: center;
-            margin: 0px auto;
-            text-align: center;
 
-        }
-            /*------------*/
-            /* Fin Footer */
-            /*------------*/
+        /*****************/
+        /* DOCUMENTACION */
+        /*****************/
 
 
 
@@ -341,238 +539,8 @@
 
 
 
+        /* FOOTER */
 
-
-
-
-
-        /*---------------------------------*/
-        /* Ajustes para la vista en móvil. */
-        /*---------------------------------*/
-    
-
-        @media only screen and (max-width: 900px) {
-
-
-            #engranajes{
-                display: flex;
-                width: 110px;
-                height: 110px;
-                text-align: center;
-                align-items: center;
-                margin: 0px auto;
-
-            }
-
-            .principalEquipo{
-                margin:0px;
-            }
-
-
-
-
-
-        }
-
-
-        @media only screen and (max-width: 768px) {
-    
-            /* Ajustes de la barra de navegación. */
-
-            .sieteymedio{
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                font-size: 18px;
-            }
-            .barraNavegacion .logo {
-                margin-left: 10px;
-            }
-            .barraNavegacion .logo img{
-                width:60px;
-                height:60px;
-            };
-                    
-            #MenuItems {
-                margin-right: 25px;
-                display: flex;
-                margin-left:20px;
-                align-items: right;
-                justify-content: right;
-                text-align: right;
-            }    
-
-            .menuLinks li{
-                display: flex;
-                padding-bottom: 5px;
-            }
-                
-            .menuLinks {
-                display: flex;
-                align-items: right;
-                justify-content: right;
-                text-align: right;
-
-            }
-            .tituloPagina{
-                display: flex;
-                flex-direction: column;
-                margin: 0;
-                align-items: center;
-                font-size: 22px;
-            }
-            
-            .barraNavegacion{
-                display:flex;
-            }
-
-            .principalTutorial p.titulo{
-                display: flex;
-                font-size: 14px;
-            }
-
-            .principalTutorial p, li, ul{
-                font-size: 11px;
-            }
-        
-
-
-
-
-
-
-
-
-
-            /* Ajustes de los cuadros. */
-        .imgs {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .imgPers {
-            display: flex;
-            align-items: center;     
-            transition: transform .3s;
-            background-color: white;
-            overflow: hidden;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            background-color: darkgray;
-        }
-
-        .producto {
-            margin-right: 0;
-            display: flex;
-            width: 250px;
-            flex-direction: column;
-            font-family: 'Indie Flower', cursive;
-            border-radius: 10px;
-            margin: 10px;
-            align-items: center;
-        }
-
-            /* Ajustes de personajes */
-            .descPers {
-                display: flex;
-                flex-direction: column;
-                
-            }
-            
-            .doscol {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-    
-            .circulo {
-                width: 300px;
-                height: 300px;
-            }
-                /* Ajuste imágenes principales para que aparezcan en columna */
-            .imgsPersonajes {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin:0
-            }
-      
-            .pr {
-                margin: 30px;
-            }
-    
-                /* Ajuste textos para que no se vea al 50%. */
-            .textoIzq {
-                width: 80%;
-                display: flex;
-            }
-    
-            .textoDer {
-                width: 80%;
-                display: flex;
-    
-            }
-
-            .momentos {
-                display: flex;
-                flex-direction: column;
-                margin: 40px;
-            }
-        
-            .columnas {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-        
-            .img1 {
-                width: 200px;
-                height: 200px;
-            }
-        
-                
-            .textoI {
-                width: 80%;
-                display: flex;
-            }
-        
-            .textoD {
-                width: 80%;
-                display: flex;
-        
-            }
-
-            .imgsIndex {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .principalIndex {
-                display: flex;
-                flex-direction: column;
-                margin: 0;
-                align-items: center;
-            }
-            .principalTutorial{
-                display: flex;
-                flex-direction: column;
-                margin: 0;
-                align-items: center;
-            }
-
-
-
-
-
-
-
-            /* Ajustes del footer */
         .footer {
             background: #000;
             color: #8a8a8a;
@@ -617,4 +585,4 @@
             justify-content: center;
             margin: 0px auto;
         } 
-    }    
+}    
