@@ -137,11 +137,16 @@
     /* COMUNES */
     /*---------*/
 
+
+   
+
     .tituloPagina {
         display: flex;
         justify-content: center; 
         font-size: 30px;
+
     }
+
 
 
     .cuadro{
@@ -156,15 +161,74 @@
         -moz-border-radius: 35px 0px 35px 35px;
         -webkit-border-radius: 35px 0px 35px 0px;
         border: 2px solid #5878ca;
+        line-height: 22px;
+    
     }
+
+    .tituloPagina:hover {
+        animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+      
+   
+    
+
+    @keyframes myAnim {
+        0% {
+            transform: translate(0);
+        }
+    
+        10% {
+            transform: translate(-2px, -2px);
+        }
+    
+        20% {
+            transform: translate(2px, -2px);
+        }
+    
+        30% {
+            transform: translate(-2px, 2px);
+        }
+    
+        40% {
+            transform: translate(2px, 2px);
+        }
+    
+        50% {
+            transform: translate(-2px, -2px);
+        }
+    
+        60% {
+            transform: translate(2px, -2px);
+        }
+    
+        70% {
+            transform: translate(-2px, 2px);
+        }
+    
+        80% {
+            transform: translate(-2px, -2px);
+        }
+    
+        90% {
+            transform: translate(2px, -2px);
+        }
+    
+        100% {
+            transform: translate(0);
+        }
+    }
+
+
+
+
 
     .bold{
         font-weight: bold;
     }
 
-    /*-----------------------------*/
-    /* INDEX ---  REGLAS DEL JUEGO */
-    /*-----------------------------*/
+    /*-------*/
+    /* INDEX */
+    /*-------*/
 
     .principalIndex{
         display: flex;
@@ -176,6 +240,7 @@
     
     .principalIndex .cuadro .ulIndex {
         margin-top: -55px;
+        
     }
 
     /* IMG RELGA DERECHA*/ 
@@ -191,7 +256,6 @@
         
     }
     .principalIndex .cuadro .divregla img:hover{
-        
         -webkit-transform: rotate(-100deg);
     }
 
@@ -291,7 +355,46 @@
         margin-right: 35px;
     }
 
+    /*--------------*/
+    /* DOCUMENTACION */
+    /*--------------*/
 
+
+    .principalDocumentacion{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principalDocumentacion .cuadro p{
+        text-align: center;
+    }
+
+    .fotosDocumentacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+    }
+
+    #documentacion{
+        width: 250px;
+        height: 160px;
+        text-align: left;
+        align-items: left;
+        margin-left: 35px;    
+    }
+
+    #python{
+        width: 250px;
+        height: 160px;
+        margin-right: 35px;
+    }
+
+    
 
 
     /*--------*/
@@ -363,6 +466,11 @@
 
         /* Ajustes de la barra de navegación. */
 
+        .barraNavegacion{
+            display:flex;
+           
+        }
+
         .sieteymedio{
             display: flex;
             text-align: center;
@@ -377,18 +485,22 @@
             height:60px;
         };
                 
-        #MenuItems {
-            margin-right: 25px;
+        #MenuItems{
+            margin-right: 15px auto;
             display: flex;
-            margin-left:20px;
+            /* margin-left:15px; */
             align-items: right;
             justify-content: right;
             text-align: right;
         }    
 
+       
+
         .menuLinks li{
             display: flex;
             padding-bottom: 5px;
+            margin: 0px auto;
+            
         }
             
         .menuLinks {
@@ -397,6 +509,9 @@
             justify-content: right;
             text-align: right;
         }
+
+
+
         .tituloPagina{
             display: flex;
             flex-direction: column;
@@ -405,8 +520,12 @@
             font-size: 22px;
         }
         
-        .barraNavegacion{
-            display:flex;
+        .cuadro{
+            line-height: 19px;
+        }
+
+        .principalTutorial p, li, ul, .principalEquipo p, .principalDocumentacion p{
+            font-size: 11px;
         }
 
 
@@ -453,6 +572,8 @@
             margin-top: 10px;
         }
 
+        
+
 
         /************/
         /* TUTORIAL */
@@ -463,16 +584,17 @@
             flex-direction: column;
             margin: 0;
             align-items: center;
+            
         }
+
+        
 
         .principalTutorial p.titulo{
             display: flex;
             font-size: 14px;
         }
 
-        .principalTutorial p, li, ul, .principalEquipo p{
-            font-size: 11px;
-        }
+        
 
         
         .fotosBaraja{
@@ -528,7 +650,31 @@
         /*****************/
 
 
+        .fotosDocumentacion{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
 
+        #documentacion{
+            width: 190px;
+            height: 120px;
+            margin-right: 25px;
+            margin-bottom: 10px;
+        }
+
+        #python{
+            width: 190px;
+            height: 120px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+        .principalDocumentacion .cuadro p.titulo{
+            display: flex;
+            font-size: 14px;
+        }
 
 
 
